@@ -4,6 +4,9 @@ export CONFIG_NAME=isaacgym_train_impala
 # Leave unchanged.
 export ISAACGYM_ARG_STR="--headless --rl_device=cuda:0 --sim_device=cuda:0 --cp_device=cuda:0 --test --use_image_obs=True  --num_envs=1 --num_objs=1"
 
+# For full stack trace
+export HYDRA_FULL_ERROR=1
+
 # For testing other tasks/seeds: change below lines.
 TASK=open_door_21
 SEED=0

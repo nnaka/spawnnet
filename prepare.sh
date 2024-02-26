@@ -1,6 +1,7 @@
 source ~/.bashrc
 
 . activate spawnnet
+# . activate base 
 export DATASET_DIR=$PWD/dataset
 export DATA_DIR=$PWD/data
 export PYTHONPATH=$PWD:$PWD/RLAfford:$PWD/RLAfford/MARL_Module/envs/:$PWD/RLAfford/Collision_Predictor_Module/CollisionPredictor/code:$PWD/RLAfford/Collision_Predictor_Module/where2act/code:$PYTHONPATH
@@ -15,4 +16,9 @@ export NUMEXPR_MAX_THREADS=16
 # 5. export CUDA_HOME=/usr/local/cuda-11.7/
 ################################
 
-
+export HYDRA_LAUNCHER="slurm"
+# 2. prepend your /usr/lib/x86_64-linux-gnu/ and <conda envs directory>/spawnnet/lib to LD_LIBRARY_PATH
+## Do below according to your cuda-11.7 or greater installation. ##
+export PATH=/usr/local/cuda-11.7/bin:$PATH
+export LD_LIBRARY_PATH=/usr/local/cuda-11.7/lib64:$CONDA_PREFIX/lib:$LD_LIBRARY_PATH
+export CUDA_HOME=/usr/local/cuda-11.7/

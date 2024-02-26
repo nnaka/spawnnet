@@ -26,7 +26,7 @@ google-auth-oauthlib==0.4.6
 grpcio==1.51.1
 gym==0.21.0
 h5py==3.7.0
-hydra-core==0.11.3
+hydra-core
 idna==3.4
 imageio==2.24.0
 importlib-metadata==4.13.0
@@ -57,7 +57,7 @@ nvidia-cuda-nvrtc-cu11==11.7.99
 nvidia-cuda-runtime-cu11==11.7.99
 nvidia-cudnn-cu11==8.5.0.96
 oauthlib==3.2.2
-omegaconf==1.4.1
+omegaconf
 open3d==0.16.0
 opencv-python==4.7.0.68
 pandas==1.5.2
